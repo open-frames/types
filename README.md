@@ -43,7 +43,7 @@ class ExampleValidator
   > {
     return {
       isValid: true,
-      clientProtocol: this.protocolIdentifier,
+      clientProtocol: payload.clientProtocol,
       message: { foo: payload.untrustedData.foo },
     };
   }
