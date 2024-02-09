@@ -1,6 +1,6 @@
-# OpenFrames Types
+# Open Frames Types
 
-A shared set of types for all OpenFrames implementations
+A shared set of types for all Open Frames implementations
 
 ## Usage
 
