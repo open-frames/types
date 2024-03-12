@@ -6,6 +6,7 @@ export type OpenFramesUntrustedData = {
   timestamp: number;
   buttonIndex: number;
   inputText?: string;
+  state?: string;
 };
 
 export type OpenFramesTrustedData = {
