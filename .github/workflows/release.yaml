@@ -26,6 +26,10 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'npm'
 
+      - name: Set auth token
+        run: |
+          echo npmAuthToken: "${{ secrets.NPM_TOKEN }}" >> ./.npmrc
+
       - name: Publish
         uses: changesets/action@v1
         with:
