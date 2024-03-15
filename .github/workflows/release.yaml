@@ -28,7 +28,7 @@ jobs:
 
       - name: Set auth token
         run: |
-          echo npmAuthToken: "${{ secrets.NPM_TOKEN }}" >> ./.npmrc
+          echo //registry.npmjs.org/:_authToken="${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Publish
         uses: changesets/action@v1
