@@ -60,8 +60,8 @@ test("should allow the fake validator to work", async () => {
   expectTypeOf(validationResponse.message).toMatchTypeOf<ResponseType>();
   expectTypeOf(validationResponse.message).not.toMatchTypeOf<{ bar: "baz" }>();
   expect(validationResponse).toEqual({
-    clientProtocol: "test",
+    clientProtocol: "test@2024-02-02",
     isValid: true,
-    data: { foo: "bar" },
+    message: { foo: "bar" },
   });
 });
