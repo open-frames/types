@@ -30,6 +30,9 @@ jobs:
         run: |
           echo //registry.npmjs.org/:_authToken="${{ secrets.NPM_TOKEN }}" > .npmrc
 
+      - name: Install Node Modules
+        run: npm i
+
       - name: Publish
         uses: changesets/action@v1
         with:
