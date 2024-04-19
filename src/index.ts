@@ -7,6 +7,7 @@ export type OpenFramesUntrustedData = {
   buttonIndex: number;
   inputText?: string;
   state?: string;
+  address?: string;
 };
 
 export type OpenFramesTrustedData = {
