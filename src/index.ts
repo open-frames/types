@@ -8,6 +8,7 @@ export type OpenFramesUntrustedData = {
   inputText?: string;
   state?: string;
   address?: string;
+  transactionId?: string;
 };
 
 export type OpenFramesTrustedData = {
